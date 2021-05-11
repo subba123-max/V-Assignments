@@ -1,0 +1,76 @@
+use demovirtusa; //using Database
+
+create table Employee (
+		emp_id int primary key,
+		emp_name varchar(255),job_name varchar(255),manager varchar(255), hire_Date varchar(255),salary int,commision varchar(255)
+,dep_Id int);
+
+
+create table Orders(
+id int,
+orderID int PRIMARY KEY,
+orderNumber int);
+
+alter table Orders add foreign key(id) references Employee(emp_id);
+
+Employee:-
+---------
+insert into Employee values(1,"ram","dev","123","03-05",10000,"a",111);
+insert into Employee values(2,"ravi","dev","123","09-05",20000,"a",111);
+insert into Employee values(3,"abhi","Tester","123","03-05",15000,"a",222);
+insert into Employee values(4,"anil","dev","123","05-05",10000,"a",111);
+insert into Employee values(5,"ranga","dev","123","11-05",10000,"a",111);
+insert into Employee values(6,"varma","dev","123","12-05",10000,"a",111);
+
+Orders:-
+--------
+insert into Orders values(1,1223,8868);
+insert into Orders values(2,1243,8834);
+insert into Orders values(3,1254,8358);
+insert into Orders values(4,1245,8248);
+insert into Orders values(5,1224,8234);
+insert into Orders values(6,3235,8998);
+
+
+----------
+ select emp_id,orderId from Orders inner join Employee where Orders.id=Employee.emp_id;
+
+
+select avg(salary) from Employee;
+
+select max(salary),emp_id from Employee;
+
+
+select max(salary) from Employee where salary<(select max(salary) from Employee);
+
+select emp_id,orderId from Employee leftouter join Orders where Employee.emp_id=Orders.id;
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------
+create table Student(id int,
+name varchar(255),marks int,class int);
+
+insert into Student values (1,200,1);
+insert into Student values (2,290,1);
+insert into Student values (3,300,1);
+insert into Student values (4,190,1);
+insert into Student values (5,200,1);
+insert into Student values (6,200,1);
+insert into Student values (7,290,1);
+insert into Student values (8,300,1);
+insert into Student values (9,190,1);
+insert into Student values (10,200,1);
+
+select max(marks),name from students where class=1;
+
+
