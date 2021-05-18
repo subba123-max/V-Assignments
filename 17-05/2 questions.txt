@@ -1,0 +1,26 @@
+Q)difference between compiler and interpreter?
+compiler:-
+===========
+1.Compiler scans the whole program in one go.	
+2.	As it scans the code in one go, the errors (if any) are shown at the end together.	
+3.	Main advantage of compilers is it’s execution time.	
+4.	It converts the source code into object code.
+5	It does not require source code for later execution.	
+Eg.	C, C++, C# etc.
+
+Interpreter:-
+-----------
+1.Translates program one statement at a time.
+2.Considering it scans code one line at a time, errors are shown line by line.
+3.Due to interpreters being slow in executing the object code, it is preferred less.
+4.It does not convert source code into object code instead it scans it line by line
+5.It requires source code for later execution.
+Eg.	Python, Ruby, Perl, SNOBOL, MATLAB, etc.
+
+Q)what is strongly typed and loosely typed languages?
+Strongly Typed Programming Languages:-
+-------------------------------------
+Strong typing in computing are used when a programmer has to put more than once restrictions in a programme in any operation, which are to be executed on different declared data types with different values. In strongly typed languages, every variable defined in a code has been be well defined and assigned with data type.
+loosely Typed Programming Languages:-
+----------------------------------
+A loosely typed language is a programming language that does not require a variable to be defined. For example, Perl is a loosely typed language, you can declare a variable, but it doesn't require you to classify the type of variable. In the example below, the first line declares the $test variable that can be used as an integer or string.
