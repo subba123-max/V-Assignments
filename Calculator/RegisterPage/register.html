@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="icon" href="https://media.glassdoor.com/sqll/29396/virtusa-squarelogo-1565584355543.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        .register{
+  margin:30px;
+  margin-top: 10%;
+}
+.style{
+    margin-left: 40%;
+}
+    </style>
+    </head>
+<body>
+    <form class="register" >	
+        <table align="center">		
+              <tr>			
+                  <td>				
+                     FullName:			
+                  </td>			
+                   <td>				
+                      <input type=”text”  id="name" placeholder="Enter fullName" >			
+                   </td>		
+              </tr>
+               <tr>
+                    <td>				
+                      Email:			
+                    </td>			
+                    <td>				
+                     <input type=text id="email"  placeholder="Enter Email" >			
+                    </td>		
+              </tr>	
+              <tr>
+                <td>				
+                  mobile:			
+                </td>			
+                <td>				
+                 <input type=text id="mobile" placeholder="Enter mobile" >			
+                </td>		
+          </tr>	
+          <tr>
+            <td>				
+              username:			
+            </td>			
+            <td>				
+             <input type=text id="username" placeholder="Enter UserName" >			
+            </td>		
+      </tr>	
+      <tr>
+        <td>				
+          password:			
+        </td>			
+        <td>				
+         <input type="password" id="password" name=”” placeholder="Password" >			
+        </td>		
+  </tr>	
+
+    
+
+        </table>
+      
+      <div>
+<div>
+  <button  onclick="register()" class="btn btn-success " style="margin-left: 50%; display: inline;" >submit</button>
+
+</div>
+<div>
+  <button  onclick="clear()" class="btn btn-success " style="margin-left: 50%; display: inline;" >Clear form</button>
+
+</div>
+    </div>
+          
+        
+   </form> 
+       
+   
+   <table align="center">		
+    <tr>			
+        <td>				
+           FullName:			
+        </td>			
+         <td id="data1">				
+         </td>		
+    </tr>
+     <tr>
+          <td>				
+            Email:			
+          </td>			
+          <td id="data2">				
+          </td>		
+    </tr>	
+    <tr>
+      <td>				
+        mobile:			
+      </td>			
+      <td id="data3">				
+      </td>		
+</tr>	
+<tr>
+  <td>				
+    username:			
+  </td>			
+  <td  id="data4" >				
+  </td>		
+</tr>	
+<tr>
+<td>				
+password:			
+</td>			
+<td id="data5" >				
+			
+</td>		
+</tr>	
+<tr>
+
+
+</table>
+<form>
+
+
+<table align="center">
+<tr>			
+  <td>				
+     value 1:			
+  </td>			
+   <td>				
+      <input type=”text”  id="value1" placeholder="Enter value" >			
+   </td>		
+</tr>
+<tr>
+    <td>				
+      value 2			
+    </td>			
+    <td>				
+     <input type=text id="value2"  placeholder="Enter value" >			
+    </td>		
+</tr>	
+<tr>
+  <td>				
+    operator 	
+  </td>			
+  <td>				
+   <input type=text id="operator"  placeholder="Enter value" >			
+  </td>		
+</tr>	
+<td  id="result"  ></td>
+<button  onclick="cal()" class="btn btn-success " style="margin-left: 50%; display: inline;" >submit</button>
+
+</table>
+</form>
+      <!-- <script src="register.js"></script>  -->
+      <script>
+        var i,j,x,y,z
+for (i=0;i<=5;i++){
+    for (j=0;j<=i;j++){
+        document.write("*")
+    }
+    document.write("<br/>")
+}
+
+for (x=1;x<=5;x++){
+  for(y=1;y<=5-x;y++){
+    document.write(" ")
+  }
+  for(z=1;z<=x;z++){
+    document.write("*")
+  }
+  document.write("<br/>")
+
+}
+var x,y;
+var z
+for (x=1;x<=50;x++){
+  var z=false;
+    for ( y=2;y<x;y++){
+        if(x%y === 0){
+            break;
+        }
+        else{
+         z=true;
+          
+        }
+        
+    }
+
+    if(z){
+          document.write(x+",")
+
+        }
+}
+
+      </script> 
+  
+</body>
+</html>
