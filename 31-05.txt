@@ -1,0 +1,17 @@
+Q)In which language we used inLine functions.
+The inline functions are a C++ enhancement feature to increase the execution time of a program. Functions can be instructed to compiler to make them inline so that compiler can replace those function definition wherever those are being called. Compiler replaces the definition of inline functions at compile time instead of referring function definition at runtime.
+NOTE- This is just a suggestion to compiler to make the function inline, if function is big (in term of executable instruction etc) then, compiler can ignore the “inline” request and treat the function as normal function
+
+Q)Differene between webpage and web application
+1.A website is a collection of web pages under the same location while a web application is a type of application that is hosted over a network
+
+2.A web application is often accessed in a certain website
+
+3.A web application often needs a lot more processing power than most websites
+
+4. A web application is more difficult to create than a website
+
+
+
+
+what is the process of DOM updation
